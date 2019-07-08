@@ -20,7 +20,8 @@
         </div>
       </div>
     </nav>
-  </header>
+</header>
+
 
 <div class="container2">
     <div class="logo">
@@ -31,48 +32,42 @@
         <br>
       </div>
     </div>
-    <div class="formulary">
-      
-        <h2>Consulta de RFC´s o CURP´s con operaciones presuntamente inexistentes</h2>
-        <hr class="red small-margin">   
+    <div class="formulary">          
+        <h2>Menú</h2>
+        <hr class="red small-margin">
         
-        <div class="container">
-            <form #todoForm= "ngForm" (keydown.enter)="$event.preventDefault(); addTodo(todo.value); todoForm.resetForm()"(ngSubmit)="addTodo(todo.value); todoForm.resetForm()">  
-              <p class="text-center" style="font-size: 25px; font-weight: lighter;margin-bottom: 20px;">Ingresa RFC´s o CURP´s</p>   
-              
-              <div class="datos">  
-                  <div class="form-group row" >       
-                      <input type="text" [disabled]="hid" #todo="ngModel" class="form-control col-sm-11" placeholder=" Ingrese un valor entre 12 a 16 respectivamente sea CURP o RFC. Sin espacios o guiones" name="todo" ngModel required minlength="12" maxlength="16">
-                      <button class="btn btn-dark col-sm-1" [disabled]="hid"  type="submit"><i class="fas fa-plus-circle"  style="padding-top:5px"></i></button>
+        <div class="container">    
+           <div class="card-deck">
+             
+                <div class="card bg-light"> 
+                    <a href="/bitacora" class="stretched-link"></a>
+                    <img src="../../assets/images/Registros.png" class="card-img-top gradient" alt="...">
+                 <div class="card-body">
+                        <h5 class="card-title">Registros</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>  
+                </div>
+            
+                <div class="card">
+                    <a href="/consultarfc" class="stretched-link"></a>
+                  <img src="../../assets/images/RFCoCURP.png" class="card-img-top image" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Consultas</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                 
                   </div>
-                  <div class="row">
-                     <div *ngIf="alert && !todo.valid" class="alert alert-danger col-sm-12" role="alert">
-                       FAVOR DE INGRESAR LA INFORMACIÓN EN EL FORMATO SOLICITADO
-                    </div>
-                      <div *ngIf="alert2" class="alert alert-warning col-sm-12" role="alert">
-                        SOLO SE PERMITEN 20 REGISTROS
-                     </div>
-                  </div>   
-              </div>  
-              
-              <div class="data-list">  
-                   <ul class="list-group">   
-                       <li class="list-group-item" *ngFor="let todo of todoArray">{{todo}} <i (click)="deleteItem(todo)" class="fas fa-trash " style="float: right; padding-top: 3px;" ></i></li>
-                  </ul>
-                 <div class="data-button" style="margin-top: 8px;">
-                   <button *ngIf="button" (click)="todoSubmit(); todoForm.resetForm()" class="btn btn-dark  btn-block" >ENVIAR</button>
-                 </div>    
+                </div>
+         
               </div>
-            </form>    
         </div>
-
         <br>
         <hr>
     </div>
-</div>
   
+   </div>
 
-  <footer>
+
+<footer>
     <div class="container3">
     <div class="row text-white" style="padding:40px 20px 20px 20px; font-size: 14px">
         <div class="col-sm-3 text-center" style="padding: 10px;">
@@ -118,6 +113,4 @@
           </div>
       </div>
     </div>
-  </footer>
-
-
+</footer>

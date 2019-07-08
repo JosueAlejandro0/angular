@@ -3,7 +3,6 @@ body{
     margin: 0;
 }
 
-
 .estilo{
     background-image: none;
 }
@@ -31,10 +30,7 @@ header nav li {
  width: 50%;
  margin-top: 20px;
 }
-.formulary{
-    margin-top:20px;
-    padding:20px;
-}
+
 hr.small-margin {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -67,13 +63,7 @@ hr.red:before {
     position: absolute;
 }
 
-.formulary{
-    padding: 40px;
-}
-.formulary p{
-    font-weight: 500;
-    font-size: 18px;
-}
+
 
 footer{
     background-image: url(../../assets/images/fondofooter.jpg);
